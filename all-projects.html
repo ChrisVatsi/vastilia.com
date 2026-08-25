@@ -127,8 +127,8 @@
                 <div class="mb-6 text-lg font-medium text-black dark:text-white menu-title">
                     Menu
                 </div>
-                <ul class="space-y-5 font-normal main-menu *:relative">
-                    <li class="group active">
+                <ul class="space-y-5 font-normal main-menu">
+                    <li class="relative group">
                         <a href="index.html#home" class="flex items-center space-x-2 group">
                             <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
                                 <i class="fal fa-home"></i>
@@ -138,7 +138,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="group">
+                    <li class="relative group">
                         <a href="index.html#about" class="flex items-center space-x-2 group">
                             <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
                                 <i class="fal fa-user"></i>
@@ -148,17 +148,17 @@
                             </span>
                         </a>
                     </li>
-                    <li class="group">
+                    <li class="relative group">
                         <a href="index.html#service" class="flex items-center space-x-2 group">
                             <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
                                 <i class="fal fa-briefcase"></i>
                             </span>
                             <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
-                                Service
+                                Services
                             </span>
                         </a>
                     </li>
-                    <li class="group">
+                    <li class="relative group">
                         <a href="index.html#skill" class="flex items-center space-x-2 group">
                             <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
                                 <i class="fal fa-graduation-cap"></i>
@@ -168,7 +168,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="group">
+                    <li class="relative group">
                         <a href="index.html#resume" class="flex items-center space-x-2 group">
                             <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
                                 <i class="fal fa-file-alt"></i>
@@ -178,7 +178,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="group">
+                    <li class="relative group active">
                         <a href="index.html#portfolio" class="flex items-center space-x-2 group">
                             <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
                                 <i class="fal fa-tasks-alt"></i>
@@ -188,27 +188,7 @@
                             </span>
                         </a>
                     </li>
-                    <li class="group">
-                        <a href="index.html#blog" class="flex items-center space-x-2 group">
-                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
-                                <i class="fal fa-blog"></i>
-                            </span>
-                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
-                                Blog
-                            </span>
-                        </a>
-                    </li>
-                    <li class="group">
-                        <a href="index.html#testimonial" class="flex items-center space-x-2 group">
-                            <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
-                                <i class="fal fa-comment-alt-lines"></i>
-                            </span>
-                            <span class="group-[&.active]:text-theme dark:group-[&.active]:text-white group-hover:text-theme transition-colors">
-                                Testimonial
-                            </span>
-                        </a>
-                    </li>
-                    <li class="group">
+                    <li class="relative group">
                         <a href="index.html#contact" class="flex items-center space-x-2 group">
                             <span class="w-5 text-black dark:text-white group-[&.active]:text-theme">
                                 <i class="fal fa-envelope"></i>
@@ -226,21 +206,19 @@
                 <!-- Social Share Icon Start  -->
                 <div class="flex items-center space-x-4 social-icons *:flex">
                     <a href="mailto:vatsiliah22@gmail.com" title="Email">
-                        <i class="fab fa-facebook-f"></i>
+                        <i class="fal fa-envelope"></i>
                     </a>
                     <a href="https://www.linkedin.com/in/christiane-vatsilia" target="_blank" title="LinkedIn">
                         <i class="fab fa-linkedin-in"></i>
                     </a>
-                    <a href="#" title="Share with X">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="#" title="Share with X">
-                        <i class="fab fa-instagram"></i>
+                    <a href="https://github.com/ChrisVatsi" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
                     </a>
                 </div>
                 <!-- Social Share Icon End  -->
             </div>
             <!-- Mobile Menu Sidebar End -->
+
 
             <!-- Sidebar Profile Start -->
             <div
@@ -252,12 +230,12 @@
                             class="w-36 h-36 mb-2.5 block mx-auto border-6 border-platinum dark:border-[#2f2f2f] overflow-hidden rounded-full *:w-full *:h-full *:rounded-full">
                             <img 
                                 src="https://avatars.githubusercontent.com/u/181310079" 
-                                class="hidden dark:block "
-                                alt="Christiane Vatsilia"> <!--Image for Dark Version -->
+                                class="hidden dark:block"
+                                alt="Christiane Vatsilia">
                             <img 
                                 src="https://avatars.githubusercontent.com/u/181310079" 
                                 class="dark:hidden"
-                                alt="Christiane Vatsilia"> <!--Image for Light Version -->
+                                alt="Christiane Vatsilia">
                         </a>
                         <h6 class="mb-1 text-lg font-semibold text-black dark:text-white name">Christiane Vatsilia</h6>
                         <div class="leading-none cd-headline clip is-full-width">
@@ -358,6 +336,7 @@
             </div>
             <!-- Sidebar Profile End -->
 
+
             <!-- Nav/Navigation Start -->
             <div
                 class="minfo__nav__wrapper bg-snowWhite dark:bg-power__black max-xl:hidden fixed top-1/2 -translate-y-1/2 right-4 2xl:right-14 z-999 flex items-center flex-col gap-4 border border-platinum dark:border-metalBlack rounded-4xl px-2.5 py-4">
@@ -365,56 +344,55 @@
                 <!-- Site Logo Start -->
                 <div class="flex border rounded-full logo w-15 h-15 border-platinum dark:border-metalBlack flex-center hover:bg-white dark:hover:bg-metalBlack">
                     <a href="index.html">
-                        <img src="assets/img/site-logo.svg" alt="Minfo">
+                        <img src="assets/img/site-logo.svg" alt="Logo">
                     </a>
                 </div>
                 <!-- Site Logo Start -->
-
 
                 <!-- Main Menu/Navigation Start -->
                 <div class="my-4 menu">
                     <ul class="space-y-2 text-center *:relative">
                         <li class="group">
                             <a href="index.html#home"
-                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                class="w-9 h-9 rounded-full flex-center group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
                                 data-title="Home">
-                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                <span class="text-black dark:text-white group-hover:text-theme">
                                     <i class="fal fa-home"></i>
                                 </span>
                             </a>
                         </li>
                         <li class="group">
                             <a href="index.html#about"
-                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                class="w-9 h-9 rounded-full flex-center group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
                                 data-title="About">
-                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                <span class="text-black dark:text-white group-hover:text-theme">
                                     <i class="fal fa-user"></i>
                                 </span>
                             </a>
                         </li>
                         <li class="group">
                             <a href="index.html#service"
-                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
-                                data-title="Service">
-                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                class="w-9 h-9 rounded-full flex-center group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                data-title="Services">
+                                <span class="text-black dark:text-white group-hover:text-theme">
                                     <i class="fal fa-briefcase"></i>
                                 </span>
                             </a>
                         </li>
                         <li class="group">
                             <a href="index.html#skill"
-                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                class="w-9 h-9 rounded-full flex-center group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
                                 data-title="Skills">
-                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                <span class="text-black dark:text-white group-hover:text-theme">
                                     <i class="fal fa-graduation-cap"></i>
                                 </span>
                             </a>
                         </li>
                         <li class="group">
                             <a href="index.html#resume"
-                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                class="w-9 h-9 rounded-full flex-center group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
                                 data-title="Resume">
-                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                <span class="text-black dark:text-white group-hover:text-theme">
                                     <i class="fal fa-file-alt"></i>
                                 </span>
                             </a>
@@ -429,28 +407,10 @@
                             </a>
                         </li>
                         <li class="group">
-                            <a href="index.html#blog"
-                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
-                                data-title="Blog">
-                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
-                                    <i class="fal fa-blog"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="group">
-                            <a href="index.html#testimonial"
-                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
-                                data-title="Testimonial">
-                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
-                                    <i class="fal fa-comment-alt-lines"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li class="group">
                             <a href="index.html#contact"
-                                class="w-9 h-9 rounded-full flex-center group-[&.active]:bg-white dark:group-[&.active]:bg-metalBlack group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
+                                class="w-9 h-9 rounded-full flex-center group-hover:bg-white dark:group-hover:bg-metalBlack transition-all duration-300 before:content-[attr(data-title)] before:absolute before:right-10 before:bg-white dark:before:bg-metalBlack before:text-sm text-theme dark:before:text-white before:px-4 before:py-2 before:rounded-md before:font-normal dark:before:font-light before:opacity-0 before:transition-all before:duration-200 group-hover:before:opacity-100 after:content-[''] after:absolute after:w-0 after:h-0 after:right-8 after:border-solid after:border-t-4 after:border-r-0 after:border-b-4 after:border-l-8 after:border-t-transparent after:border-r-transparent after:border-b-transparent after:border-l-white dark:after:border-l-metalBlack after:opacity-0 after:transition-all after:duration-200 group-hover:after:opacity-100"
                                 data-title="Contact">
-                                <span class="text-black dark:text-white group-hover:text-theme group-[&.active]:text-theme">
+                                <span class="text-black dark:text-white group-hover:text-theme">
                                     <i class="fal fa-envelope"></i>
                                 </span>
                             </a>
@@ -483,16 +443,13 @@
                     <div
                         class="absolute bottom-0 flex items-center invisible px-5 py-6 space-x-3 transition-all duration-300 -translate-y-1/2 opacity-0 social-icons top-1/2 bg-white dark:bg-nightBlack rounded-4xl right-6 group-hover:opacity-100 group-hover:visible group-hover:right-10 -z-1 *:flex *:transition *:duration-200">
                         <a href="mailto:vatsiliah22@gmail.com" class="hover:text-theme" title="Email">
-                            <i class="fab fa-facebook"></i>
+                            <i class="fal fa-envelope"></i>
                         </a>
                         <a href="https://www.linkedin.com/in/christiane-vatsilia" target="_blank" class="hover:text-theme" title="LinkedIn">
                             <i class="fab fa-linkedin-in"></i>
                         </a>
-                        <a href="#" class="hover:text-theme" title="Share with X">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="hover:text-theme" title="Share with X">
-                            <i class="fab fa-instagram"></i>
+                        <a href="https://github.com/ChrisVatsi" target="_blank" class="hover:text-theme" title="GitHub">
+                            <i class="fab fa-github"></i>
                         </a>
                     </div>
                     <!-- Social Share Icon End  -->
@@ -501,6 +458,7 @@
 
             </div>
             <!-- Nav/Navigation End -->
+
 
             <!-- Main Content Start -->
             <div class="minfo__contentBox relative mx-auto max-w-container xl:max-2xl:max-w-65rem">
