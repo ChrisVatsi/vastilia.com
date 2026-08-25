@@ -39,6 +39,18 @@
     <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 
+    <!-- Theme Mode Script (Safari & Chrome) -->
+    <script>
+        (function() {
+            if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+                document.documentElement.classList.add('dark');
+                document.documentElement.style.backgroundColor = '#18191a';
+            } else {
+                document.documentElement.classList.remove('dark');
+                document.documentElement.style.backgroundColor = '#f2f5f8';
+            }
+        })();
+    </script>
 </head>
 
 <body class="relative custom_cursor overflow-x-hidden max-w-full">

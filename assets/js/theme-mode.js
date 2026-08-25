@@ -1,25 +1,41 @@
 // Site Theme Color Mode
 (function() {
-    // Check saved theme or default to dark if not set, or system preference
-    if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-        localStorage.theme = 'dark';
-    } else if (localStorage.theme === 'light') {
-        document.documentElement.classList.remove('dark');
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+            if (document.body) {
+                document.body.classList.add('dark');
+                document.body.style.backgroundColor = '#18191a';
+            }
+            document.documentElement.style.backgroundColor = '#18191a';
+            localStorage.theme = 'dark';
+        } else {
+            document.documentElement.classList.remove('dark');
+            if (document.body) {
+                document.body.classList.remove('dark');
+                document.body.style.backgroundColor = '#f2f5f8';
+            }
+            document.documentElement.style.backgroundColor = '#f2f5f8';
+            localStorage.theme = 'light';
+        }
+    }
+
+    // Initial check
+    var savedTheme = localStorage.theme;
+    if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+        applyTheme('dark');
+    } else if (savedTheme === 'light') {
+        applyTheme('light');
     } else {
-        // default to dark
-        document.documentElement.classList.add('dark');
-        localStorage.theme = 'dark';
+        applyTheme('dark');
     }
 
     function setDarkTheme() {
-        document.documentElement.classList.add('dark');
-        localStorage.theme = 'dark';
+        applyTheme('dark');
     }
 
     function setLightTheme() {
-        document.documentElement.classList.remove('dark');
-        localStorage.theme = 'light';
+        applyTheme('light');
     }
 
     function toggleTheme() {
@@ -31,15 +47,36 @@
     }
 
     // Attach click listener to all theme toggle buttons
-    document.addEventListener('DOMContentLoaded', function() {
+    function initButtons() {
         var toggleButtons = document.querySelectorAll('.theme_toggle_btn');
         toggleButtons.forEach(function(btn) {
-            btn.addEventListener('click', function(e) {
-                e.preventDefault();
-                toggleTheme();
-            });
+            btn.removeEventListener('click', handleToggleClick);
+            btn.addEventListener('click', handleToggleClick);
         });
-    });
+        // Re-apply to body once DOM is ready
+        if (document.documentElement.classList.contains('dark')) {
+            if (document.body) {
+                document.body.classList.add('dark');
+                document.body.style.backgroundColor = '#18191a';
+            }
+        } else {
+            if (document.body) {
+                document.body.classList.remove('dark');
+                document.body.style.backgroundColor = '#f2f5f8';
+            }
+        }
+    }
+
+    function handleToggleClick(e) {
+        e.preventDefault();
+        toggleTheme();
+    }
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initButtons);
+    } else {
+        initButtons();
+    }
 
     window.toggleTheme = toggleTheme;
     window.setDarkTheme = setDarkTheme;

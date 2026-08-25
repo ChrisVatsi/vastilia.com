@@ -579,6 +579,11 @@ input[type="range"]:active::-webkit-slider-thumb {
 
 html {
   -webkit-text-size-adjust: 100%;
+  background-color: rgb(242 245 248);
+}
+html.dark {
+  background-color: rgb(24 25 26) !important;
+  color-scheme: dark;
 }
 
 body {
@@ -591,11 +596,15 @@ body {
   color: rgb(112 112 112 / var(--tw-text-opacity));
 }
 
+html.dark,
+html.dark body,
+.dark body,
+body.dark,
 body:is(.dark *) {
   --tw-bg-opacity: 1;
-  background-color: rgb(24 25 26 / var(--tw-bg-opacity));
+  background-color: rgb(24 25 26 / var(--tw-bg-opacity)) !important;
   --tw-text-opacity: 1;
-  color: rgb(153 153 153 / var(--tw-text-opacity));
+  color: rgb(153 153 153 / var(--tw-text-opacity)) !important;
 }
 
 p {
@@ -4557,7 +4566,7 @@ html.dark .portfolio_wrapper .info span {
   opacity: 1;
 }
 
-/* Mobile Horizontal Overflow Fix */
+/* Mobile Horizontal Overflow & Safari Dark Mode Fix */
 html,
 body {
   overflow-x: hidden !important;
@@ -4565,6 +4574,26 @@ body {
   width: 100% !important;
   position: relative;
   -webkit-overflow-scrolling: touch;
+}
+
+html {
+  background-color: #f2f5f8;
+}
+
+html.dark {
+  background-color: #18191a !important;
+  color-scheme: dark;
+}
+
+body {
+  background-color: #f2f5f8;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html.dark body,
+.dark body,
+body.dark {
+  background-color: #18191a !important;
 }
 
 .minfo__app {
