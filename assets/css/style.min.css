@@ -4556,3 +4556,31 @@ html.dark .portfolio_wrapper .info span {
 .\[\&\.is-menu-open\]\:opacity-100.is-menu-open {
   opacity: 1;
 }
+
+/* Mobile Horizontal Overflow Fix */
+html,
+body {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.minfo__app {
+  overflow-x: hidden !important;
+  max-width: 100% !important;
+  width: 100% !important;
+}
+
+.bg-lines {
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
+
+@media (max-width: 1279px) {
+  .custom_cursor_one,
+  .custom_cursor_two {
+    display: none !important;
+  }
+}
